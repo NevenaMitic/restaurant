@@ -5,12 +5,12 @@ import { motion } from 'framer-motion';
 
 const ContactUs = () => {
     return (
-        <div className="relative h-screen flex flex-col md:flex-row">
+        <div className="relative flex flex-col md:flex-row">
             {/* Leva strana sa slikom i opisom */}
             <motion.div 
-                className="relative w-full md:w-1/2 h-full flex items-center justify-center"
-                whileInView={{ opacity: 1, y: 0 }} // Animacija kad je u viewport-u
-                initial={{ opacity: 0, y: -50 }} // Početna pozicija
+                className="relative w-full md:w-1/2 h-[70vh] md:h-screen flex items-center justify-center"
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -50 }}
                 transition={{ duration: 0.25 }}
                 viewport={{ once: true, amount: 0.5 }}
             >
@@ -31,11 +31,11 @@ const ContactUs = () => {
 
             {/* Desna strana sa blokom informacija o kontaktu */}
             <motion.div 
-                className="w-full md:w-1/2 flex items-center justify-center p-8 md:p-10 bg-black"
+                className="w-full md:w-1/2 flex items-center justify-center p-8 md:p-10 mb-20 bg-black"
                 whileInView={{ opacity: 1, y: 75 }} 
                 initial={{ opacity: 0, y: 75 }} 
                 transition={{ duration: 0.30 }}
-                viewport={{ once: true, amount: 0.5 }} 
+                viewport={{ once: true, amount: 0.5 }}
             >
                 <div className="border p-10 w-full text-center relative pb-20">
                     <p className="text-heading2-bold font-playfair text-gold-1 mb-4">Contact Information</p>
@@ -78,4 +78,3 @@ const ContactUs = () => {
     );
 };
 export default ContactUs;
-
