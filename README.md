@@ -1,6 +1,6 @@
 # Restaurant Online Ordering System
 
-This project is a Next.js application designed for online food ordering with an intuitive user interface. It allows users to browse a variety of products, add items to the cart, and securely complete payments via Stripe. The system is powered by MongoDB for data storage, Clerk for user authentication, and Cloudinary for image management.
+This project is an Next.js application **designed for online food ordering** developed as part of a **thesis project**, with an intuitive user interface. It allows users to browse a variety of products, add items to the cart, and securely complete payments via Stripe. The system is powered by MongoDB for data storage, Clerk for user authentication, and Cloudinary for image management.
 
 ## Features
 
